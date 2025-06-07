@@ -1,8 +1,3 @@
-///BORRARRRRRRRR
-package com.mycompany.proyecto;
-
-public class NodoDobleCircular<T>{
-        T dato;
 
 package com.mycompany.proyecto;
 
