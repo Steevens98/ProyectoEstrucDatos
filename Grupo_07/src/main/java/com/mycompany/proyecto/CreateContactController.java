@@ -1,0 +1,26 @@
+package com.mycompany.proyecto;
+
+import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+
+/**
+ * FXML Controller class
+ *
+ * @author Usuario
+ */
+public class CreateContactController{
+
+    @FXML
+    private void switchToCreateNaturalPerson() throws IOException {
+        App.setRoot("secondary");
+    }
+
+    @FXML
+    private void switchToCreateEmpresa() throws IOException {
+        App.setRoot("secondary");
+    }
+    
+}

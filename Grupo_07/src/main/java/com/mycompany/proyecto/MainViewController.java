@@ -17,7 +17,7 @@ public class MainViewController{
     
     @FXML
     private void switchCreateContac() throws IOException {
-        App.setRoot("secondary");
+        App.setRoot("createContact");
     }
 
     @FXML
