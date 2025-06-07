@@ -1,5 +1,5 @@
 
-package com.mycompany.proyecto;
+package Modelo;
 
 public class NodoDobleCircular<T> {
     T dato;

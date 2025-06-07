@@ -1,5 +1,6 @@
 
-package com.mycompany.proyecto;
+package Modelo;
+
 
 public class Empresa extends Contacto{
         public Empresa(String id, String rubro, String numeroEmpresa) {

@@ -1,4 +1,4 @@
-package com.mycompany.proyecto;
+package Modelo;
 
 import java.util.HashMap;
 import java.util.Map;

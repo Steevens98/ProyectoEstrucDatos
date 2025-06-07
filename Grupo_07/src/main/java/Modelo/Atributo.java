@@ -1,5 +1,5 @@
 
-package com.mycompany.proyecto;
+package Modelo;
 
 public class Atributo {
     private TipoAtributo clave;   // Ej: "Teléfono", "Email", "País"

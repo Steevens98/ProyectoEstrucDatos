@@ -1,5 +1,5 @@
 
-package com.mycompany.proyecto;
+package Modelo;
 
 public enum TipoAtributo {
      // Atributos GENERALES (comunes a todos)
