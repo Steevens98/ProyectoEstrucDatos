@@ -12,11 +12,11 @@
     <VBox alignment="CENTER" layoutX="30.0" layoutY="34.0" spacing="20" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="34.0">
         <Label style="-fx-font-size: 22px; -fx-font-weight: bold;" text="Bienvenido" />
 
-        <Label style="-fx-font-size: 16px;" text="Seleccione el tipo de contacto" />
+        <Label style="-fx-font-size: 16px;" text="Seleccione la Opcion" />
 
         <HBox alignment="CENTER" spacing="20">
-            <Button onAction="#onCreatePersonContact" prefWidth="150" style="-fx-background-radius: 6;" text="Persona Natural" />
-            <Button onAction="#onCreateCompanyContact" prefWidth="150" style="-fx-background-radius: 6;" text="Empresa" />
+            <Button onAction="#switchCreateContac" prefWidth="150" style="-fx-background-radius: 6;" text="Crear Contacto" />
+            <Button onAction="#switchToContacts" prefWidth="150" style="-fx-background-radius: 6;" text="Ver Contacto" />
         </HBox>
 
         <Separator />
