@@ -1,10 +1,5 @@
 package com.mycompany.proyecto;
 
-public class ListaDobleCircular<T>{
-    
-
-package com.mycompany.proyecto;
-
 public class ListaDobleCircular<T> {
 
 
