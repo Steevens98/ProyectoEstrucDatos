@@ -15,7 +15,7 @@ public class CreateContactController{
 
     @FXML
     private void switchToCreateNaturalPerson() throws IOException {
-        App.setRoot("secondary");
+        App.setRoot("createNaturalPerson");
     }
 
     @FXML
