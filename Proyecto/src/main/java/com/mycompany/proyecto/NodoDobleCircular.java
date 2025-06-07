@@ -3,6 +3,12 @@ package com.mycompany.proyecto;
 
 public class NodoDobleCircular<T>{
         T dato;
+
+package com.mycompany.proyecto;
+
+public class NodoDobleCircular<T> {
+    T dato;
+
     public NodoDobleCircular<T> siguiente;
     public NodoDobleCircular<T> anterior;
     

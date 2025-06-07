@@ -1,8 +1,13 @@
-//////BORRARRRRRRR
 package com.mycompany.proyecto;
 
 public class ListaDobleCircular<T>{
     
+
+package com.mycompany.proyecto;
+
+public class ListaDobleCircular<T> {
+
+
     private NodoDobleCircular<T> cabeza;
     public ListaDobleCircular() {
         this.cabeza = null;
@@ -99,4 +104,6 @@ public class ListaDobleCircular<T>{
         } while (actual != cabeza);
         return contador;
     }
+
 }
+
