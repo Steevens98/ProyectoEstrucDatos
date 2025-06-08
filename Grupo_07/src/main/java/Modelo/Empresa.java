@@ -3,8 +3,8 @@ package Modelo;
 
 
 public class Empresa extends Contacto{
-        public Empresa(String id, String nombre, String telefono, String email, String pais, String rubro, String numeroEmpresa) {
-        super(id,nombre,telefono,email,pais);
+        public Empresa(String nombre, String telefono, String email, String pais, String rubro, String numeroEmpresa) {
+        super(nombre,telefono,email,pais);
         // Asigna valores a los atributos
         editarAtributo(TipoAtributo.RUBRO, rubro);
         editarAtributo(TipoAtributo.DIRECCION_EMPRESA, numeroEmpresa);
