@@ -20,7 +20,7 @@ public class CreateContactController{
 
     @FXML
     private void switchToCreateEmpresa() throws IOException {
-        App.setRoot("secondary");
+        App.setRoot("createEmpresa");
     }
     
 }
