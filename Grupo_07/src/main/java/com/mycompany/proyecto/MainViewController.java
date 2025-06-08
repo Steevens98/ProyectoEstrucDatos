@@ -16,17 +16,15 @@ import javafx.scene.Parent;
 public class MainViewController{
     
     @FXML
-    private void onCreatePersonContact() throws IOException {
-        App.tipoContactoSeleccionado = "persona";
-        App.setRoot("secondary");
+    private void switchCreateContac() throws IOException {
+        App.setRoot("createContact");
     }
 
     @FXML
-    private void onCreateCompanyContact() throws IOException {
-        App.tipoContactoSeleccionado = "empresa";
+    private void switchToContacts() throws IOException {
         App.setRoot("secondary");
     }
-
+    
     
 }
     
