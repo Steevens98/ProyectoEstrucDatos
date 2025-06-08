@@ -43,7 +43,8 @@ public class GestorContactos extends GestorBase<Contacto> {
                 String[] p = linea.split(",");
                 if (p.length == 7) {
                     if(p[0]=="persona"){
-                        
+                       PersonaNatural persona = new PersonaNatural(p[1],p[3],p[5],p[6],p[2],p[4]);                       
+                       //contactos.agregar(new PersonaNatural(p[1],p[3],p[5],p[6],p[2],p[4])); 
                     }
                 }
             }

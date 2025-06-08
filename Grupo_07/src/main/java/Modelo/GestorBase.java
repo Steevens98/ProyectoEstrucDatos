@@ -1,7 +1,7 @@
 
 package Modelo;
 public abstract class GestorBase<T> {
-    protected ListaDobleCircular<T> elementos;
+    public ListaDobleCircular<T> elementos;
 
     public GestorBase() {
         this.elementos = new ListaDobleCircular<>();
