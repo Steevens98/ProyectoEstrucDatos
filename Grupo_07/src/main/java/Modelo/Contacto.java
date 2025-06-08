@@ -13,20 +13,20 @@ public abstract class Contacto {
         this.atributos = new HashMap<>();
         this.fotos = new ListaDobleCircular<>();
         // Inicializar TODOS los atributos (generales + específicos) en el constructor
-        inicializarAtributos();
-        // Asigna valores a los atributos
-        editarAtributo(TipoAtributo.NOMBRE, nombre);
-        editarAtributo(TipoAtributo.TELEFONO, telefono);
-        editarAtributo(TipoAtributo.EMAIL, email);
-        editarAtributo(TipoAtributo.PAIS, pais);
+        inicializarAtributos(nombre,telefono,email,pais);
     }
-    private void inicializarAtributos() {
+    private void inicializarAtributos(String nombre, String telefono, String email, String pais) {
         // Atributos generales (Single Responsibility)
         for (TipoAtributo tipo : TipoAtributo.values()) {
             if (tipo.esGeneral()) {
                 atributos.put(tipo, new Atributo(tipo, ""));
             }
         }
+        // Asigna valores a los atributos
+        editarAtributo(TipoAtributo.NOMBRE, nombre);
+        editarAtributo(TipoAtributo.TELEFONO, telefono);
+        editarAtributo(TipoAtributo.EMAIL, email);
+        editarAtributo(TipoAtributo.PAIS, pais);
         // Atributos específicos (Liskov Substitution)
         inicializarAtributosEspecificos();
     }
