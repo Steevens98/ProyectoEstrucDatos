@@ -8,12 +8,17 @@ public abstract class Contacto {
     private ListaDobleCircular<Foto> fotos;
     private Map<TipoAtributo, Atributo> atributos;  // Clave: nombre del atributo (ej: "Teléfono")
 
-    public Contacto(String id) {
+    public Contacto(String id, String nombre, String telefono, String email, String pais) {
         this.id = id;
         this.atributos = new HashMap<>();
         this.fotos = new ListaDobleCircular<>();
         // Inicializar TODOS los atributos (generales + específicos) en el constructor
         inicializarAtributos();
+        // Asigna valores a los atributos
+        editarAtributo(TipoAtributo.NOMBRE, nombre);
+        editarAtributo(TipoAtributo.TELEFONO, telefono);
+        editarAtributo(TipoAtributo.EMAIL, email);
+        editarAtributo(TipoAtributo.PAIS, pais);
     }
     private void inicializarAtributos() {
         // Atributos generales (Single Responsibility)
