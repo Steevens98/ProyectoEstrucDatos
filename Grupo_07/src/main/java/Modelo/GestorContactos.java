@@ -1,6 +1,10 @@
 
 package Modelo;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
 public class GestorContactos extends GestorBase<Contacto> {
     @Override
     protected boolean existe(Contacto contacto) {
@@ -28,5 +32,25 @@ public class GestorContactos extends GestorBase<Contacto> {
             actual = actual.siguiente;
         } while (actual != elementos.cabeza);
         return null;
+    }
+    
+    public static ListaDobleCircular<GestorContactos> cargarContactos(){
+        ListaDobleCircular<GestorContactos> contactos = new ListaDobleCircular<>();
+        try (BufferedReader bf = new BufferedReader(new FileReader("recursos/residentes.txt"))) {
+            String linea;
+            while ((linea = bf.readLine()) != null) {
+                System.out.println(linea);
+                String[] p = linea.split(",");
+                if (p.length == 7) {
+                    if(p[0]=="persona"){
+                        
+                    }
+                }
+            }
+        } catch (IOException ex) {
+            System.out.println("no se pudo cargar la informacion de los residentes");
+            ex.printStackTrace();
+        }
+        return contactos;
     }
 }
