@@ -6,7 +6,7 @@ import java.util.Map;
 public abstract class Contacto {
     private String id;
     private ListaDobleCircular<Foto> fotos;
-    private Map<TipoAtributo, Atributo> atributos;  // Clave: nombre del atributo (ej: "Teléfono")
+    protected Map<TipoAtributo, Atributo> atributos;  // Clave: nombre del atributo (ej: "Teléfono")
 
     public Contacto(String nombre, String telefono, String email, String pais) {
         this.id = crearId();
@@ -15,7 +15,7 @@ public abstract class Contacto {
         // Inicializar TODOS los atributos (generales + específicos) en el constructor
         inicializarAtributos(nombre,telefono,email,pais);
     }
-    
+   
     public static String crearId() {
         String id = "";
         for (int i = 1; i <= 6; i++) {

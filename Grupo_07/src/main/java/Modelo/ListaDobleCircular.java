@@ -70,6 +70,9 @@ public class ListaDobleCircular<T> {
         System.out.println("(vuelve al inicio)");
     }
     
+     public boolean estaVacia() {
+    return cabeza == null;
+}
     // Mostrar hacia atrás
     public void mostrarAtras() {
         if (cabeza == null) {

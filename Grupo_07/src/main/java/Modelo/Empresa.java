@@ -12,7 +12,9 @@ public class Empresa extends Contacto{
         
     @Override
     protected void inicializarAtributosEspecificos() {
-        editarAtributo(TipoAtributo.RUBRO, null);
-        editarAtributo(TipoAtributo.DIRECCION_EMPRESA, null);
+        //editarAtributo(TipoAtributo.RUBRO, null);
+        //editarAtributo(TipoAtributo.DIRECCION_EMPRESA, null);
+        atributos.put(TipoAtributo.RUBRO, new Atributo(TipoAtributo.RUBRO, null));
+        atributos.put(TipoAtributo.DIRECCION_EMPRESA, new Atributo(TipoAtributo.DIRECCION_EMPRESA, null));
     }
 }

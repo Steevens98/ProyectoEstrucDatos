@@ -34,17 +34,20 @@ public class GestorContactos extends GestorBase<Contacto> {
         return null;
     }
     
-    public static ListaDobleCircular<GestorContactos> cargarContactos(){
-        ListaDobleCircular<GestorContactos> contactos = new ListaDobleCircular<>();
-        try (BufferedReader bf = new BufferedReader(new FileReader("recursos/residentes.txt"))) {
+    public static ListaDobleCircular<Contacto> cargarContactos(){
+        ListaDobleCircular<Contacto> contactos = new ListaDobleCircular<>();
+        try (BufferedReader bf = new BufferedReader(new FileReader("recursos/usuarios.txt"))) {
             String linea;
             while ((linea = bf.readLine()) != null) {
                 System.out.println(linea);
                 String[] p = linea.split(",");
                 if (p.length == 7) {
-                    if(p[0]=="persona"){
+                    if(p[0].equals("persona")){
                        PersonaNatural persona = new PersonaNatural(p[1],p[3],p[5],p[6],p[2],p[4]);                       
-                       //contactos.agregar(new PersonaNatural(p[1],p[3],p[5],p[6],p[2],p[4])); 
+                       contactos.agregar(persona);
+                    } else {
+                        Empresa empresa = new Empresa(p[1], p[2], p[3], p[4], p[5], p[6]);
+                        contactos.agregar(empresa);
                     }
                 }
             }

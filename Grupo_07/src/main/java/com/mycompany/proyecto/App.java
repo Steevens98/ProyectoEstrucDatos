@@ -1,5 +1,8 @@
 package com.mycompany.proyecto;
 
+import Modelo.Contacto;
+import Modelo.GestorContactos;
+import Modelo.ListaDobleCircular;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -17,6 +20,15 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
+        ListaDobleCircular<Contacto> contactos = GestorContactos.cargarContactos();
+
+    // Verificar que se hayan cargado correctamente (impresión opcional)
+    if (!contactos.estaVacia()) {
+        System.out.println("Contactos cargados exitosamente:");
+        contactos.mostrarAdelante(); // Asumiendo que tienes un método imprimir en ListaDobleCircular
+    } else {
+        System.out.println("No se encontraron contactos.");
+    }
         scene = new Scene(loadFXML("mainView"), 640, 480);
         stage.setScene(scene);
         stage.setTitle("Gestor de Contactos");

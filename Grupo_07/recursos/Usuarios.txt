@@ -4,3 +4,6 @@ persona,Juan,Perez,0987564321,1992/11/08,juan.perez@yahoo.com,Perú
 empresa,TechCorp,0234567890,contacto@techcorp.com,Ecuador,Tecnología,Av. Amazonas 123
 empresa,Ferretería El Tornillo,0287654321,ventas@eltornillo.com,Colombia,Construcción,Calle 8 #12-34
 empresa,AgroVida,0277889900,info@agrovida.pe,Perú,Agricultura,Carretera Central Km 24
+persona,mario,cueva,0982054163,2025-06-04,mscueva@espol.edu.ec,Ecuador
+persona,sss,sss,ssss,2025-06-04,sss,ssss
+empresa,wwwww,wwwwwww,wwwwwwww,wwwwwwww,wwww,wwww

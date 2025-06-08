@@ -12,8 +12,10 @@ public class PersonaNatural extends Contacto{
 
     @Override
     protected void inicializarAtributosEspecificos() {
-        editarAtributo(TipoAtributo.APELLIDO, null);
-        editarAtributo(TipoAtributo.FECHA_NACIMIENTO, null);
+       // atributos.put(TipoAtributo.APELLIDO, null);
+       // atributos.put(TipoAtributo.FECHA_NACIMIENTO, null);
+        atributos.put(TipoAtributo.APELLIDO, new Atributo(TipoAtributo.APELLIDO, null));
+        atributos.put(TipoAtributo.FECHA_NACIMIENTO, new Atributo(TipoAtributo.FECHA_NACIMIENTO, null));
     }
     
 }
