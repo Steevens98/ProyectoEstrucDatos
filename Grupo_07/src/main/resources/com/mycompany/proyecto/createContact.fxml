@@ -19,5 +19,6 @@
         </HBox>
 
         <Separator />
+      <Button mnemonicParsing="false" onAction="#switchAtras" text="Atras" />
     </VBox>
 </AnchorPane>

@@ -23,4 +23,9 @@ public class CreateContactController{
         App.setRoot("createEmpresa");
     }
     
+    @FXML
+    private void switchAtras() throws IOException {
+        App.setRoot("mainView");
+    }
+    
 }
