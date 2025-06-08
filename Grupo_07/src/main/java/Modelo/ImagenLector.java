@@ -16,7 +16,7 @@ public class ImagenLector {
             return datos;
         }
     }
-
+//Se a añadido un public static imagen
     // Convierte un arreglo de bytes (objeto) a un objeto Image de JavaFX
     public static Image objetoAImagen(byte[] datos) {
         ByteArrayInputStream bis = new ByteArrayInputStream(datos);
