@@ -22,7 +22,7 @@ public class MainViewController{
 
     @FXML
     private void switchToContacts() throws IOException {
-        App.setRoot("secondary");
+        App.setRoot("viewContact");
     }
     
     
