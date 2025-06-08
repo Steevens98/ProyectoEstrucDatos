@@ -4,8 +4,10 @@
  */
 package com.mycompany.proyecto;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
 /**
@@ -13,14 +15,11 @@ import javafx.fxml.Initializable;
  *
  * @author Usuario
  */
-public class CreateEmpresaController implements Initializable {
+public class CreateEmpresaController{
 
-    /**
-     * Initializes the controller class.
-     */
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
+    @FXML
+    private void SwitchAtras() throws IOException {
+        App.setRoot("createContact");
+    }
     
 }

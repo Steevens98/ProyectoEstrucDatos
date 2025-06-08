@@ -11,10 +11,9 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
-    <BorderPane prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyecto.CreateNaturalPersonController">
+<BorderPane prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyecto.CreateNaturalPersonController">
         <left>
             <VBox alignment="TOP_CENTER" spacing="10" BorderPane.alignment="CENTER">
                 <padding>
@@ -81,7 +80,7 @@
                     <Insets bottom="20" left="10" right="20" top="10" />
                 </padding>
                 <Button fx:id="btnAceptar" text="Aceptar" />
-                <Button fx:id="btnCancelar" text="Cancelar" />
+                <Button fx:id="btnCancelar" onAction="#SwitchAtras" text="Cancelar" />
             </HBox>
         </bottom>
       <top>
