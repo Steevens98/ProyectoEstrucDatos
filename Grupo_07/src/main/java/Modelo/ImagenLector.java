@@ -7,7 +7,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 public class ImagenLector {
-
+//Aqui lo que aremos sera guardar una imagen en un objeto en este caso datos
     // Convierte un archivo de imagen a un arreglo de bytes (objeto serializable)
     public static byte[] archivoAObjeto(File archivo) throws IOException {
         try (FileInputStream fis = new FileInputStream(archivo)) {
