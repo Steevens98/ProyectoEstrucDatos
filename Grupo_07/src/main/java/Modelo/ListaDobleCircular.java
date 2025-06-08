@@ -3,7 +3,7 @@ package Modelo;
 public class ListaDobleCircular<T> {
 
 
-    private NodoDobleCircular<T> cabeza;
+    public NodoDobleCircular<T> cabeza;
     public ListaDobleCircular() {
         this.cabeza = null;
     }

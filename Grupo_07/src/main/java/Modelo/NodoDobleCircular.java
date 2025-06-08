@@ -2,7 +2,7 @@
 package Modelo;
 
 public class NodoDobleCircular<T> {
-    T dato;
+    public T dato;
 
     public NodoDobleCircular<T> siguiente;
     public NodoDobleCircular<T> anterior;
