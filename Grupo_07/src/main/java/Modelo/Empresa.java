@@ -2,19 +2,57 @@
 package Modelo;
 
 
+/**
+ *
+ * @author Usuario
+ */
+/**
+ * Clase Empresa. Representa una entidad del sistema.
+ */
 public class Empresa extends Contacto{
-        public Empresa(String nombre, String telefono, String email, String pais, String rubro, String numeroEmpresa) {
-        super(nombre,telefono,email,pais);
-        // Asigna valores a los atributos
-        editarAtributo(TipoAtributo.RUBRO, rubro);
-        editarAtributo(TipoAtributo.DIRECCION_EMPRESA, numeroEmpresa);
+    private String rubro;
+    private String direccion;
+
+    public Empresa(String id,String nombre, String telefono, String email, String pais, String rubro, String direccion) {
+        super(id,nombre, telefono, email, pais);
+        this.rubro = rubro;
+        this.direccion = direccion;
     }
-        
+
+/**
+ * Método getRubro. Implementa una operación específica.
+ */
+    public String getRubro() {
+        return rubro;
+    }
+
+/**
+ * Método setRubro. Implementa una operación específica.
+ */
+    public void setRubro(String rubro) {
+        this.rubro = rubro;
+    }
+
+/**
+ * Método getDireccion. Implementa una operación específica.
+ */
+    public String getDireccion() {
+        return direccion;
+    }
+
+/**
+ * Método setDireccion. Implementa una operación específica.
+ */
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
     @Override
-    protected void inicializarAtributosEspecificos() {
-        //editarAtributo(TipoAtributo.RUBRO, null);
-        //editarAtributo(TipoAtributo.DIRECCION_EMPRESA, null);
-        atributos.put(TipoAtributo.RUBRO, new Atributo(TipoAtributo.RUBRO, null));
-        atributos.put(TipoAtributo.DIRECCION_EMPRESA, new Atributo(TipoAtributo.DIRECCION_EMPRESA, null));
+/**
+ * Método toString. Implementa una operación específica.
+ */
+    public String toString() {
+        return super.toString() + ", rubro='" + rubro + '\'' + ", direccion='" + direccion + '\'' + '}';
     }
+    
 }
