@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Separator?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="250" prefWidth="400" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyecto.CreateContactController">
-
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.prueba.CreateContactController">
     <VBox alignment="CENTER" layoutX="30.0" layoutY="34.0" spacing="20" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="34.0">
 
         <Label style="-fx-font-size: 16px;" text="Seleccione la Opcion" />
@@ -19,6 +17,6 @@
         </HBox>
 
         <Separator />
-      <Button mnemonicParsing="false" onAction="#switchAtras" text="Atras" />
+    <Button mnemonicParsing="false" onAction="#switchAtras" text="Cancelar" />
     </VBox>
 </AnchorPane>
