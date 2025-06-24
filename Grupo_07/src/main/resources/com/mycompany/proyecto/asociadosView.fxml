@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.mycompany.proyecto.AsociadosViewController">
+    <center>
+        <VBox alignment="CENTER" prefHeight="308.0" prefWidth="619.0" spacing="10">
+            <HBox alignment="CENTER" spacing="10">
+                <Button fx:id="btnFotoAnterior" text="←" />
+                <Button fx:id="btnFotoSiguiente" text="→" />
+            </HBox>
+
+            <VBox fx:id="vboxContactos" spacing="10" />
+        </VBox>
+    </center>
+    
+    
+    <bottom>
+        <HBox alignment="CENTER" spacing="20">
+            <padding>
+                <Insets bottom="10" left="10" right="10" top="10" />
+            </padding>
+            <Button fx:id="btnAtras" text="Atrás" />
+            <Button fx:id="btnSiguiente" text="Siguiente" />
+         <BorderPane.margin>
+            <Insets bottom="3.0" />
+         </BorderPane.margin>
+        </HBox>
+    </bottom>
+   <top>
+      <HBox prefHeight="34.0" prefWidth="590.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Vista de Contacto">
+               <HBox.margin>
+                  <Insets left="225.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+         <BorderPane.margin>
+            <Insets left="10.0" top="10.0" />
+         </BorderPane.margin>
+      </HBox>
+   </top>
+</BorderPane>
