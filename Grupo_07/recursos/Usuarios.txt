@@ -1,4 +1,4 @@
-empresa,789908,Ferretería El Tornillo,0287654321,ventas@eltornillo.com,Ecuador,Distribucion,Calle 8 #12-34
+empresa,789908,Ferretería El Tornillo,0287654321,ventas@eltornillo.com,Colombia,Distribucion,Calle 8 #12-34
 empresa,386714,TechCorp,0234567890,contacto@techcorp.com,Ecuador,Tecnología,Av. Amazonas 123
 empresa,198219,Giatelco,094356312,Gia@gmail.com,Mexico,Tecnologia,Veracruz
 empresa,943277,AgroVida,0277889900,info@agrovida.pe,Perú,Agricultura,Carretera Central Km 24
