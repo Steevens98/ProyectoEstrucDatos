@@ -23,7 +23,7 @@
                <VBox.margin>
                   <Insets left="50.0" top="30.0" />
                </VBox.margin></ImageView>
-                <Button fx:id="btnSeleccionarImagen" text="Seleccionar Imagen">
+                <Button fx:id="btnSeleccionarImagen" text="Seleccionar Imagen" onAction="#seleccionarImagen">
                <VBox.margin>
                   <Insets left="50.0" />
                </VBox.margin></Button>
@@ -80,7 +80,7 @@
                     <Insets bottom="20" left="10" right="20" top="10" />
                 </padding>
                 <Button fx:id="btnAceptar" onAction="#guardarEnArchivo" text="Aceptar" />
-                <Button fx:id="btnCancelar" onAction="#SwitchAtras" text="Cancelar" />
+                <Button fx:id="btnCancelar" onAction="#SwitchCancelar" text="Cancelar" />
             </HBox>
         </bottom>
       <top>
